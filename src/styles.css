@@ -1,0 +1,139 @@
+body, div, h1, h2, h3, p, button, header, nav, img{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+header{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: #839D9A;
+    height: 7vh;
+    width: 100%
+}
+
+header nav{
+    display: flex;
+    align-items: center; 
+    width: max(40%, 400px);
+    justify-content: space-around;
+}
+
+header nav button{
+    background-color: #839D9A;
+    border: solid #343330 2px;
+    border-radius: 2em;
+    color: #46351D;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: 1em;
+    font-size: max(1vw, 2vh);
+}
+
+#content{
+    color:#46351D;
+    height: 93vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr max(60%, 500px) 1fr ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#content span:nth-child(1), #content span:nth-child(3){
+    background-image: url('./assets/home/tacos.jpg');
+    background-position: center;
+    background-size: 60em;
+    background-repeat: repeat;
+}
+
+.home{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color:#BFD2BF;
+    height: 100%;
+    width: max(100%, 500px);
+}
+
+.home div.title{
+    font-size: max(2em, 2vw);
+    display: flex;
+    justify-content: center;
+    border: double #46351D 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    font-style: italic;
+}
+
+.home div.body{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home div.body p{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.home div.body div:nth-child(2){
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.home div.body div:nth-child(2) img{
+    width: 30em;
+    border-radius: 10px;
+}
+
+.home div.body div:nth-child(2) p{
+    width: 25em;
+    align-self: center;
+    font-weight: 200;
+}
+
+#tacos-specials{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: max(2em, 1vw);
+    font-style: oblique;
+    gap: 10px;
+}
+
+#tacos-specials img{
+    width: 12em;
+}
+
+.tacos-specials{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* https://coolors.co/46351d-646f4b-839d9a-7bb2d9-bfd2bf*/
+/* https://www.pexels.com/photo/cooked-food-on-the-wooden-tray-4955091/ */
+/* https://www.pexels.com/photo/cooked-food-on-brown-wooden-tray-7388095/ */
+/* https://www.pexels.com/photo/a-salad-in-a-paper-box-with-tomatoes-lettuce-and-avocado-17320990/ */
+/* https://www.pexels.com/photo/taco-with-beef-and-cheese-filling-on-black-surface-9993709/ */
+/* https://www.pexels.com/photo/top-view-of-a-delicious-dish-with-vegetables-sprinkled-with-sesame-14883831/ */
