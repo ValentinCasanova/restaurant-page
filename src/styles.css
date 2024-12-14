@@ -39,7 +39,7 @@ header nav button{
     font-size: max(1vw, 2vh);
 }
 
-#content{
+.content{
     color:#46351D;
     height: 93vh;
     width: 100vw;

@@ -1,4 +1,7 @@
-
+import tacos1Img from './assets/home/tacos1.jpg';
+import tacos3Img from './assets/home/tacos3.jpg';
+import tacos4Img from './assets/home/tacos4.jpg';
+import tacos5Img from './assets/home/tacos5.jpg';
 
 const home = document.createElement('div');
 home.appendChild(document.createElement('span'));
@@ -21,7 +24,7 @@ body.appendChild(titleSub);
 
 const body1 = document.createElement('div');
 const body1Img = document.createElement('img');
-body1Img.src = 'assets/home/tacos1.jpg';
+body1Img.src = tacos1Img;
 body1.appendChild(body1Img);
 const body1P = document.createElement('p');
 body1P.appendChild(document.createTextNode('At El Tacazo, we believe every taco should be a masterpiece. That’s why we use only the freshest ingredients, sourced daily to ensure bold, vibrant flavors in every bite. From crisp vegetables to perfectly seasoned meats, our commitment to quality shines through, creating tacos that are as wholesome as they are delicious. Taste the difference freshness makes!'))
@@ -36,11 +39,11 @@ body2.append(body2H);
 const body2Div = document.createElement('div');
 body2Div.className = 'taco-specials';
 const body2Img1 = document.createElement('img');
-body2Img1.src = './assets/home/tacos3.jpg';
+body2Img1.src = tacos3Img;
 const body2Img2 = document.createElement('img');
-body2Img2.src = './assets/home/tacos4.jpg';
+body2Img2.src = tacos4Img;
 const body2Img3 = document.createElement('img');
-body2Img3.src = './assets/home/tacos5.jpg';
+body2Img3.src = tacos5Img;
 body2Div.appendChild(body2Img1);
 body2Div.appendChild(body2Img2);
 body2Div.appendChild(body2Img3);
@@ -52,5 +55,8 @@ body.appendChild(body2);
 
 homeDiv.append(body);
 homeDiv.append(document.createElement('span'));
+home.appendChild(homeDiv);
+home.appendChild(document.createElement('span'));
+home.className = 'content';
 
 export {home};
