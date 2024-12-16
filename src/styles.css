@@ -6,6 +6,7 @@ body, div, h1, h2, h3, p, button, header, nav, img{
 
 button:hover{
     cursor: pointer;
+    background-color: #7BB2D9;
 }
 
 header{
@@ -51,6 +52,7 @@ header nav button{
 
 #content span:nth-child(1), #content span:nth-child(3){
     background-image: url('./assets/home/tacos.jpg');
+    background-attachment: fixed;
     background-position: center;
     background-size: 60em;
     background-repeat: repeat;
@@ -129,11 +131,69 @@ header nav button{
     flex-wrap: wrap;
 }
 
+.menu{
+    background-color: #BFD2BF;
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.section{
+    font-size: 2em;
+    margin-top: 1em;
+    width: max(40vw, 450px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #46351D;
+    border: solid #46351D 5px;
+    border-radius: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    font-style: italic;
+}
+
+.items{
+    background-color: #BFD2BF;
+    width: max(80vw, 500px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.item{
+    background-color:#839D9A;
+    margin-top: 20px;
+    width: 450px;
+    height: 30vh;
+    border: solid #46351D 5px;
+    border-radius: 1em;
+}
 
 
-/* https://coolors.co/46351d-646f4b-839d9a-7bb2d9-bfd2bf*/
-/* https://www.pexels.com/photo/cooked-food-on-the-wooden-tray-4955091/ */
-/* https://www.pexels.com/photo/cooked-food-on-brown-wooden-tray-7388095/ */
-/* https://www.pexels.com/photo/a-salad-in-a-paper-box-with-tomatoes-lettuce-and-avocado-17320990/ */
-/* https://www.pexels.com/photo/taco-with-beef-and-cheese-filling-on-black-surface-9993709/ */
-/* https://www.pexels.com/photo/top-view-of-a-delicious-dish-with-vegetables-sprinkled-with-sesame-14883831/ */
+
+
+
+/* https://coolors.co/46351d-646f4b-839d9a-7bb2d9-bfd2bf
+ https://www.pexels.com/photo/cooked-food-on-the-wooden-tray-4955091/
+ https://www.pexels.com/photo/cooked-food-on-brown-wooden-tray-7388095/
+ https://www.pexels.com/photo/a-salad-in-a-paper-box-with-tomatoes-lettuce-and-avocado-17320990/
+ https://www.pexels.com/photo/taco-with-beef-and-cheese-filling-on-black-surface-9993709/
+ https://www.pexels.com/photo/top-view-of-a-delicious-dish-with-vegetables-sprinkled-with-sesame-14883831/
+ https://www.pexels.com/photo/mexican-restaurant-27365297/
+ https://www.pexels.com/photo/mouthwatering-tacos-in-macro-shot-photography-5454019/
+ https://www.pexels.com/photo/bowl-with-soup-18688535/
+ https://www.pexels.com/photo/plate-of-mexican-taquitos-17429144/
+ https://www.pexels.com/photo/edamame-bean-risotto-in-ceramic-bowl-6544227/
+ https://www.pexels.com/photo/a-close-up-shot-of-mixed-beans-in-a-bowl-5984480/
+ https://www.pexels.com/photo/person-holding-a-tortilla-on-brown-wooden-plate-7613429/
+ https://unsplash.com/photos/yellow-fruit-juice-on-glass-cup-pPhN8HFzkDE
+ https://www.pexels.com/photo/drinks-supermarket-cans-beverage-3008/
+ 
+*/

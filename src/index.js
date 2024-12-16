@@ -1,10 +1,10 @@
 import './styles.css';
 import {home} from './home.js';
 
-function initialLoad(){
+function loadHome(){
     const content = document.querySelector('#content');
     console.log(home);
     content.appendChild(home);
 }
 
-initialLoad();
+//loadHome();
