@@ -141,6 +141,7 @@ header nav button{
     gap: 1em;
     overflow-y: scroll;
     overflow-x: hidden;
+    color: #46351D;
 }
 
 .section{
@@ -169,13 +170,41 @@ header nav button{
 
 .item{
     background-color:#839D9A;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 20px;
-    width: 450px;
-    height: 30vh;
+    width: 410px;
+    height: max(30vh, 350px);
     border: solid #46351D 5px;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.item p{
+    font-size: 1.2em;
+}
+
+.item img{
+    margin-top: 1em;
+    height: 60%;
     border-radius: 1em;
 }
 
+.footer{
+    height: 50px;
+    width: 50px;
+    background-color: #343330;
+}
+
+.items:nth-child(6){
+    margin-bottom: 5em;
+}
 
 
 
@@ -195,5 +224,5 @@ header nav button{
  https://www.pexels.com/photo/person-holding-a-tortilla-on-brown-wooden-plate-7613429/
  https://unsplash.com/photos/yellow-fruit-juice-on-glass-cup-pPhN8HFzkDE
  https://www.pexels.com/photo/drinks-supermarket-cans-beverage-3008/
- 
+
 */
