@@ -1,7 +1,7 @@
 import taqueriaImg from './assets/about/taqueria.jpg'
 
 const about = document.createElement('div');
-about.className = about;
+about.className = 'about';
 
 // story
 const story = document.createElement('div');
@@ -15,19 +15,21 @@ const storyDiv = document.createElement('div');
 
 const storyDivP1 = document.createElement('p');
 storyDivP1.appendChild(document.createTextNode('Welcome to '));
-const emText = document.createElement('em');
-emText.textContent = 'El Tacazo';
-storyDivP1.appendChild(emText);
+const emText1 = document.createElement('em');
+emText1.textContent = 'El Tacazo';
+storyDivP1.appendChild(emText1);
 storyDivP1.appendChild(document.createTextNode(', where we bring the authentic flavors of Mexico right to your plate! Our taqueria is passionate about serving fresh, high-quality ingredients in every taco, burrito, and quesadilla. With traditional recipes passed down through generations and a focus on bold, vibrant flavors, we offer a true taste of Mexican cuisine.'));
 
 const storyDivP2 = document.createElement('p');
 storyDivP2.appendChild(document.createTextNode('Whether you\'re here for a quick bite or to enjoy a meal with friends and family, our welcoming atmosphere and mouthwatering dishes are sure to leave you craving more. At '));
-storyDivP2.appendChild(emText);
+const emText2 = document.createElement('em');
+emText2.textContent = 'El Tacazo';
+storyDivP2.appendChild(emText2);
 storyDivP2.appendChild(document.createTextNode(', every meal is a celebration of food, culture, and community!'));
 
 storyDiv.appendChild(storyDivP1);
 storyDiv.appendChild(storyDivP2);
-
+story.append(storyDiv);
 about.appendChild(story);
 
 // contact
@@ -67,7 +69,7 @@ for(let i = 0; i < 3; i++){
 }
 location.appendChild(locationUl);
 contact.appendChild(location);
-about.appendChild(contact);
+about.appendChild(contact); 
 
 
-export {about};
+export { about };

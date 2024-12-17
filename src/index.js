@@ -4,19 +4,22 @@ import {menu} from './menu.js';
 import {about} from './about.js';
 
 const content = document.querySelector('#content');
+const buttons = document.querySelectorAll('button');
+let currPage = 'home';
 
-function loadHome(){
-    content.appendChild(home);
+content.appendChild(home);
+
+function changePage(nextPage) {
+    if(nextPage == currPage) return;
+    content.removeChild(content.children[0]);
 }
 
-function loadMenu() {{
-    content.appendChild(menu);
-}}
+for(let button of buttons){
+    button.addEventListener('click', () => changePage(button.innerText.toLowerCase()));
+}
 
-function loadAbout() {{
-    content.appendChild(about);
-}}
 
-//loadHome();
 
 //loadMenu();
+
+//loadAbout();
